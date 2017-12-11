@@ -834,7 +834,7 @@ MonoBehaviour:
     m_Bits: 256
   maxSlope: 50
   heightCorrectionRate: 1.5
-  isDebug: 1
+  isDebug: 0
 --- !u!124 &124886812692980230
 Behaviour:
   m_ObjectHideFlags: 1

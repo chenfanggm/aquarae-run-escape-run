@@ -12,9 +12,7 @@ public class ThirdPersonPerspectiveCameraController : MonoBehaviour {
 
 	Quaternion targetRotation;
 	Vector3 targetPos;
-	bool smoothRotating = false;
 	
-	// Update is called once per frame
 	void Update () {
 		MoveWithTarget();
 		LookAtTarget();

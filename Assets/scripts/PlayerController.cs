@@ -15,20 +15,12 @@ public class PlayerController : MonoBehaviour {
 	public bool isDebug;		
 
 	Vector2 directionInput;
-	float groundAngle;
-
-	Vector3 targetPos;
-	Quaternion targetRotation;
-	Transform camera;
-
 	Vector3 forward;
+	float groundAngle;	
+	Vector3 targetPos;	
 	RaycastHit downRay;
 	RaycastHit forwardRay;	
 	bool isGrounded;
-
-	void Start () {
-		camera = Camera.main.transform;
-	}
 	
 	void Update() {
 		GetInput();
@@ -88,7 +80,6 @@ public class PlayerController : MonoBehaviour {
 
 	void Rotate() {
 		transform.Rotate(0, directionInput.x * rotationSpeed * Time.deltaTime, 0);
-		targetRotation = transform.rotation;
 	}
 
 	void Move() {
